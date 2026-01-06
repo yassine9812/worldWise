@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import PageNav from "../components/PageNav";
 
 export default function Homepage() {
   return (
     <div>
-      Homepage
+      <PageNav />
+      <h1>Homepage</h1>
+      <Link to="/Product">Go to Product Page</Link>
     </div>
-  )
+  );
 }
